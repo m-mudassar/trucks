@@ -1,0 +1,58 @@
+############### Truck Dispatcher System #####################
+# Front end for the truck dispatcher system
+There will be a diver box in which a total of 16 drivers are to be displayed.
+The driver images are in 22*22 round img element.
+Driver name will be displayed under the driver's name.
+The driver images will be in a grid of 4 * 4.
+
+There will be a truck box in which a total of 8 trucks are to be displayed.
+The truck images will have width of 75px * auto height.
+The truck number will be displayed under the truck's name.
+The truck images will be in a grid of 4 * 4.
+
+# There will be a selection box in which we can drop the drivers and trucks.
+# There wil be a maximum of 2 drivers and 1 truck in the selection box.
+
+There will be a box in which a total of 8 containers are to be displayed.
+The container number will be displayed under the container.
+
+There will be a selection box in which we can drag and drop drivers, truck and container.
+
+There will be a button to select dispatch date from calender above the main container(left side).
+There will be a button to add the loaded truck to the selection box. 
+
+A table will be shown wi the basic information of the truck(Truck No, Drivers names with commas, container) 
+and three buttons(edit, delete and view). 
+
+# Lgical flow of the program
+Truck 
+    - Truck No
+    - Truck img
+    - Drivers[]
+    - Dispatch Date
+    - Container[]
+    - Current Location{x,y}
+    - Dispatch Location{x,y}
+    - Dispatch code{Driver's Name(2 alphabets) + Last Digit of truck(4 digits) + container(2 digits) + paddingOfFive}
+    -- Action
+        - Add Driver
+        - Add Container
+        - Remove Driver
+        - Remove Container
+        - Move Truck
+        - Dispatch Truck
+Driver
+    - Driver id
+    - Driver Name
+    - Driver img
+Container 
+    - Container No
+    - Container img
+
+
+# ################################################################################
+
+A truck will have maximum of two drivers and 1 container.
+
+
+   
